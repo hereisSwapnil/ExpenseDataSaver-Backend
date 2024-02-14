@@ -17,7 +17,7 @@ app.use(methodOverride("_method"));
 const userRoutes = require("./routes/user.routes.js");
 
 // routes declare
-app.use("/", userRoutes);
+app.use("/api", userRoutes);
 
 app.get("/", (req, res) => {
   res.send("Yupp The server is runnng 🎉 !");
